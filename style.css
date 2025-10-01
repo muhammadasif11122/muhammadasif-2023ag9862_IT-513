@@ -1,0 +1,206 @@
+/* ========== GLOBAL RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ========== HEADER & NAV ========== */
+header {
+    background: linear-gradient(90deg, #ff4e50, #fc913a);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+header ul li a:hover {
+    background: white;
+    color: #ff4e50;
+}
+
+/* ========== MAIN CONTENT ========== */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #ff4e50;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #fc913a;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #444;
+    margin: 15px 0 10px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+/* ========== LISTS ========== */
+ul {
+    margin: 10px 0 10px 20px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* ========== FORMS ========== */
+form {
+    display: grid;
+    gap: 15px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: #fc913a;
+    padding: 0 8px;
+}
+
+label {
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: auto;
+    padding: 10px 20px;
+    background: #ff4e50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background: #fc913a;
+}
+
+/* ========== TABLES ========== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+table caption {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #fc913a;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+thead {
+    background: #ff4e50;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background: #222;
+    color: #eee;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+footer a {
+    color: #ff4e50;
+    text-decoration: none;
+}
+
+/* ========== DETAILS DROPDOWN ========== */
+details summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #ff4e50;
+    margin: 8px 0;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+}
